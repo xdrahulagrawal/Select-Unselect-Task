@@ -1,0 +1,30 @@
+@import './mixin';
+
+.radical-container {
+    width: 34%;
+    height: 290px;
+    background-color: white;
+    margin: 0 0 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0.1px 0.1px 1px black;
+
+    .radical-container-item1 {
+        margin-left: 19px;
+        color: #3c3838;
+    }
+
+    .radical-container-item2 {
+        display: flex;
+        justify-content: end;
+        font-size: 15px;
+        flex-wrap: nowrap;
+        color: #5a6570;
+
+        .radical-container-subitem1 {
+            margin-top: 40px;
+            @include flex-coloum;
+            gap: 18px;
+            align-items: flex-start;
+        }
+    }
+}

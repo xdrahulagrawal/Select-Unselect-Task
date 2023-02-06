@@ -1,8 +1,11 @@
+import { Box } from '@mui/material';
+import RootRouter from "./routes/RootRouter";
+import './assests/styles/index.module.scss';
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Box>
+      <RootRouter />
+    </Box>
   );
 }
 

@@ -1,0 +1,43 @@
+@import './mixin';
+
+body {
+    background-color: #6D9AC4;
+}
+
+
+.auth-container {
+    @include flex-coloum;
+    background-color: white;
+    width: 32%;
+    height: 455px;
+    position: relative;
+    left: 33%;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 8px;
+    margin-top: 9%;
+
+    .auth-container-item1 {
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .auth-container-item2 {
+        @include form-control;
+        height: 36px;
+        color: white;
+        background-color: #ED5684;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .auth-container-item3 {
+        text-align: center;
+    }
+
+    .error {
+        color: red;
+        text-align: center;
+        font-size: 15px;
+    }
+}

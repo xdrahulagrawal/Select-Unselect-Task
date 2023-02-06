@@ -1,0 +1,74 @@
+@import './mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+/*InputFiled Component*/
+
+.input-filed {
+    @include form-control
+}
+
+/*Header Component*/
+.header-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: #ED5684;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-around;
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/*Home Component*/
+.home-container {
+    margin-top: 90px;
+
+}
+
+/*search task container*/
+
+.complete-task-container {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    h2 {
+        flex-basis: 50%;
+        width: 40%;
+        text-align: center;
+    }
+
+    input {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+}
+
+/* NoMatch Component*/
+.no-match {
+    text-align: center;
+    margin-top: 20%;
+}
