@@ -11,6 +11,7 @@ function Header() {
     return (
         <div className={headerStyle['header-container']}>
             <Link to='/'><h2 className='item'>SNDKCORP</h2></Link>
+            <h3>Rahul</h3>
             <ul className={headerStyle['header-list']}>
                 <li><Link to='/login' onClick={logoutHandler}> Logout</Link></li>
                 <li><Link to='/newtask'>Add Task</Link></li></ul>
